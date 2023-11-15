@@ -18,10 +18,12 @@ spec:
         app: web
     spec:
       containers:
-      - name: nginx-test-container
-        image: nginx:stable
+      - name: app1-golang-container
+        image: registry.gitlab.com/itoutposts1/app1-golang:branch-dev-2023-11-09-10-08-56
         ports:
-        - containerPort: 80
+        - containerPort: 8080
+      imagePullSecrets:
+        - name: gitlab-auth
 ---
 apiVersion: v1
 kind: Service
