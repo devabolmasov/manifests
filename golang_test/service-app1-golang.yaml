@@ -7,5 +7,5 @@ spec:
     app: app1-golang
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 80
+      port: 5000
+      targetPort: 8080
