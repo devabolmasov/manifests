@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: app1-golang
-          image: registry.gitlab.com/itoutposts1/app1-golang:branch-dev-2023-11-09-10-08-56
+          image: registry.gitlab.com/itoutposts1/app1-golang:branch-dev-2023-11-20-13-21-18
           ports:
             - containerPort: 8080
       imagePullSecrets:
